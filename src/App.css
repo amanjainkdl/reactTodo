@@ -1,38 +1,151 @@
-.App {
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.app {
+  margin: 5px;
+}
+
+.heading {
   text-align: center;
+  margin: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 60%;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
+  padding: 20px;
+  border: 1px solid grey;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 50px;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.input-container .todo-input {
+  min-height: 70%;
+  min-width: 95%;
+  outline: none;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.icon-div {
+  height: 79%;
+  min-width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0275d8;
+}
+
+.date {
+  margin-top: 14px;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #5bc0de;
+  outline: none;
+  color: aliceblue;
+  margin-top: 14px;
+  border: 1px solid grey;
+}
+
+.icon {}
+
+ul{
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.content {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 6px;
+}
+
+.clear-all{
+  width: 100px;
+  padding: 10px;
+  margin: 15px;
+  background-color: #5bc0de;
+  color: aliceblue;
+  border: 1px solid black;
+  outline: none;
+}
+
+.list-item {
+  display: flex;
+  width: 100%;
+  padding: 15px 0px;
+  font-size: 20px;
+  background-color: aqua;
+}
+
+.task-item {
+  width: 60%;
+}
+
+.date-item {
+  width: 20%;
+}
+
+.btn-icon {
+  width: 20%;
+}
+
+.btn-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.edit {
+  font-size: 20px;
+  background: transparent;
+  color: green;
+  border: none;
+  padding: 3px;
+  cursor: pointer;
+  outline: none;
+}
+
+.delete {
+  font-size: 20px;
+  background: transparent;
+  color: red;
+  border: none;
+  padding: 3px;
+  cursor: pointer;
+  outline: none;
+}
+
+@media only screen and (max-width:700px) {
+  .container {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .content{
+    width: 95%;
   }
 }
